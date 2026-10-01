@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" styleClass="about_page" stylesheets="@CSS/All.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.Controllers.AboutPage">
+    <children>
+    <ImageView fitHeight="578.0" fitWidth="584.0" layoutX="163.0" layoutY="12.0" opacity="0.2" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@Images/Pizza_ගින්න.png" />
+        </image>
+    </ImageView>
+    <ImageView fitHeight="68.0" fitWidth="58.0" layoutX="38.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="product-image">
+        <image>
+            <Image url="@Images/Pizza_ගින්න.png" />
+        </image>
+    </ImageView>
+    <Label layoutX="141.0" layoutY="20.0" styleClass="app-title" text="PIZZA ගින්න........... " />
+    <ImageView fx:id="Home_B" fitHeight="35.0" fitWidth="35.0" layoutX="851.0" layoutY="14.0" onMouseClicked="#Home_B_Click" pickOnBounds="true" preserveRatio="true" styleClass="product-image">
+        <image>
+            <Image url="@Images/Home_Button.png" />
+        </image>
+    </ImageView>
+      <Pane layoutX="34.0" layoutY="103.0" prefHeight="464.0" prefWidth="831.0" styleClass="PIZZA_CAKE_pane">
+         <children>
+            <Label layoutX="354.0" layoutY="14.0" styleClass="about_title" text="ABOUT" />
+
+             <Label layoutX="344.0" layoutY="86.0" styleClass="about_sub" text="PIZZA HUNTER" />
+
+
+             <Label layoutX="317.0" layoutY="142.0" styleClass="about_sub" text="Fresh • Hot • Delicious" />
+
+
+             <Label layoutX="116.0" layoutY="291.0" maxWidth="600" styleClass="about_min" text="Pizza Hunter is a modern pizza selling application designed to make ordering fast, easy, and enjoyable. We offer a wide variety of freshly baked pizzas and refreshing drinks made with quality ingredients and local flavors." wrapText="true" />
+
+
+             <Label layoutX="122.0" layoutY="207.0" maxWidth="600" prefHeight="50.0" prefWidth="586.0" styleClass="about_min" text="Our mission is to deliver great taste, affordable prices, and excellent service to every customer." wrapText="true" />
+
+
+             <Label layoutX="291.0" layoutY="423.0" styleClass="about_footer" text="© 2025 Pizza Hunter | All Rights Reserved" />
+            <ImageView fx:id="Close_B" fitHeight="35.0" fitWidth="42.0" layoutX="772.0" layoutY="14.0" onMouseClicked="#Close_B_Click" pickOnBounds="true" preserveRatio="true" styleClass="product-image">
+               <image>
+                  <Image url="@Images/Close-removebg-preview.png" />
+               </image></ImageView>
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>
